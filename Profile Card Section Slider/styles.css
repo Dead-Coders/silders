@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #eee6d2;
+  --secondary-color: #e81564;
+  --extra-light: #f5f5f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.profile__card {
+  width: 17.5rem;
+  height: 24rem;
+  background-color: var(--extra-light);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.header {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  width: 12rem;
+  height: 15rem;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem solid var(--extra-light);
+  transition: 0.5s;
+}
+
+.image img {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  bottom: -45px;
+  transition: 0.5s;
+}
+
+.footer span {
+  font-size: 1.25rem;
+  color: var(--extra-light);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer span:hover {
+  scale: 1.1;
+}
+
+.profile__card:hover .header::before {
+  background-color: var(--secondary-color);
+}
+
+.profile__card:hover .image {
+  scale: 0.75;
+}
+
+.profile__card:hover .footer {
+  bottom: 0;
+}

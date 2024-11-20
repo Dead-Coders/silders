@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+img{
+    user-select: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #444;
+}
+
+.team .slide{
+    text-align: center;
+}
+
+.team .slide:hover .image .share{
+    bottom: 0;
+}
+
+.team .slide .image{
+    position: relative;
+    overflow: hidden;
+}
+
+.team .slide .image img{
+    background-color: #f1eae9;
+    width: 100%;
+}
+
+.team .slide .image .share{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10rem;
+    padding: 2rem;
+    background: rgba(0,0,0,0.8);
+}
+
+.team .slide .image .share a{
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.team .slide .image .share a:hover{
+    color: #df9084;
+}
+
+.team .slide .content h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+}
+
+.team .slide .content span{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+}
+
+.team-slider .swiper-button-next{
+    color: #444;
+}
+
+.team-slider .swiper-button-prev{
+    color: #444;
+}

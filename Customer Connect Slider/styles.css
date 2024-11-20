@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #012e6a;
+  --primary-color-dark: #418ddc;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --extra-light: #e2e8f0;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 35, 80, 0.8), rgba(0, 35, 80, 0.8)),
+    url("assets/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 100px auto 20px;
+  padding: 5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  isolation: isolate;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: -80px;
+  width: 150px;
+  height: 150px;
+  font-size: 6rem;
+  display: grid;
+  place-content: center;
+  color: var(--white);
+  background-color: var(--primary-color-dark);
+  border-radius: 100%;
+}
+
+.content {
+  display: grid;
+  align-self: center;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.content p {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.card__details {
+  position: relative;
+  padding: 1rem;
+  border-top: 1rem solid var(--extra-light);
+}
+
+.card__details span {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -2.5rem;
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+  color: var(--white);
+  background-color: var(--primary-color-dark);
+  border-radius: 100%;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration-skip-ink: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.content div span {
+  padding: 2px 5px;
+  border-radius: 100%;
+  color: red;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.card__details p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.card__details h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.card__details h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.nav {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.nav span {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  background-color: var(--primary-color-dark);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav span:nth-child(1) {
+  background-color: #72a9db;
+}
+
+@media (width < 1080px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 720px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

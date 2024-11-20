@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider-Animation Landing Page</title>
+     <!-- BOX ICONS ------------->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <!--=========== SWIPER CSS =========-->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <!----------- CSS STYLESHEET ---------------->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--========= HEADER =========-->
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Explore</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Destination</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Hotels</a></li>
+
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <!--====== ISLAND 1 =========-->
+                <section class="islands swiper-slide">
+                    <img src="Images/nature1.jpg" alt="" class="islands_bg">
+                    <div class="islands_container bd-container">
+                        <div class="islands_data">
+                            <h2 class="islands_subtitle">Nature</h2>
+                            <h1 class="islands_title">Austailia</h1>
+                            <p class="islands_description">Small South Pacific island northwest of Tahiti in French Polynesia sourrounded by motus.</p>
+                            <a href="#" class="islands_button">Explore <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                        <div class="islands_video">
+                            <div class="islands_video_content">
+                                <i class="bx bx-play-circle islands_video-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--========= ISLAND 2 ==========-->
+                <section class="islands swiper-slide">
+                    <img src="Images/nature2.jpg" alt="" class="islands_bg">
+                    <div class="islands_container bd-container">
+                        <div class="islands_data">
+                            <h2 class="islands_subtitle">Nature</h2>
+                            <h1 class="islands_title">Island</h1>
+                            <p class="islands_description">Small South Pacific island northwest of Tahiti in French Polynesia sourrounded by motus.</p>
+                            <a href="#" class="islands_button">Explore <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                        <div class="islands_video">
+                            <div class="islands_video_content">
+                                <i class="bx bx-play-circle islands_video-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--======== ISLAND 3 =======-->
+                <section class="islands swiper-slide">
+                    <img src="Images/nature3.jpg" alt="" class="islands_bg">
+                    <div class="islands_container bd-container">
+                        <div class="islands_data">
+                            <h2 class="islands_subtitle">Nature</h2>
+                            <h1 class="islands_title">Blue River</h1>
+                            <p class="islands_description">Small South Pacific island northwest of Tahiti in French Polynesia sourrounded by motus.</p>
+                            <a href="#" class="islands_button">Explore <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                        <div class="islands_video">
+                            <div class="islands_video_content">
+                                <i class="bx bx-play-circle islands_video-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--======== ISLAND POP-UP ===========-->
+                <div class="islands_popup" id="popup">
+                    <div>
+                        <div class="islands_popup-close" id="popupclose">
+                            <i class="bx bx-x"></i>
+                        </div>
+
+                        <iframe class="islands_popup-video" src="https://www.youtube.com/embed/0GQ1mcZO95U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--========= CONROLS  =========-->
+        <div class="controls gallery-thumbs">
+            <div class="controls_container swiper-wrapper">
+                <img src="Images/nature1.jpg" class="controls_image swiper-slide" alt="">
+                <img src="Images/nature2.jpg" class="controls_image swiper-slide" alt="">
+                <img src="Images/nature3.jpg" class="controls_image swiper-slide" alt="">
+            </div>
+        </div>
+    </main>
+    
+    
+    <!----========== GSAP ANIMATION ===========-->
+    <script src="js/gsap.min.js"></script>
+    <!--=========== SWIPER JS LIBRARY =========-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--=========== JS =========-->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
